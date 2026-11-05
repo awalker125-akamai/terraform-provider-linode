@@ -13,23 +13,23 @@ import (
 )
 
 type NodePoolModel struct {
-	ID             types.String               `tfsdk:"id"`
-	ClusterID      types.Int64                `tfsdk:"cluster_id"`
-	Count          types.Int64                `tfsdk:"node_count"`
-	Type           types.String               `tfsdk:"type"`
-	DiskEncryption types.String               `tfsdk:"disk_encryption"`
-	Tags           types.Set                  `tfsdk:"tags"`
-	Nodes          types.List                 `tfsdk:"nodes"`
-	Autoscaler     []NodePoolAutoscalerModel  `tfsdk:"autoscaler"`
-	Taints         []NodePoolTaintModel       `tfsdk:"taint"`
-	Labels         types.Map                  `tfsdk:"labels"`
-	K8sVersion     types.String               `tfsdk:"k8s_version"`
-	UpdateStrategy types.String               `tfsdk:"update_strategy"`
-	Label          types.String               `tfsdk:"label"`
-	FirewallID     types.Int64                `tfsdk:"firewall_id"`
-	IsolationIPv4  types.Bool                 `tfsdk:"isolation_public_ipv4"`
-	IsolationIPv6  types.Bool                 `tfsdk:"isolation_public_ipv6"`
-	Networking     []NodePoolNetworkingModel  `tfsdk:"networking"`
+	ID             types.String              `tfsdk:"id"`
+	ClusterID      types.Int64               `tfsdk:"cluster_id"`
+	Count          types.Int64               `tfsdk:"node_count"`
+	Type           types.String              `tfsdk:"type"`
+	DiskEncryption types.String              `tfsdk:"disk_encryption"`
+	Tags           types.Set                 `tfsdk:"tags"`
+	Nodes          types.List                `tfsdk:"nodes"`
+	Autoscaler     []NodePoolAutoscalerModel `tfsdk:"autoscaler"`
+	Taints         []NodePoolTaintModel      `tfsdk:"taint"`
+	Labels         types.Map                 `tfsdk:"labels"`
+	K8sVersion     types.String              `tfsdk:"k8s_version"`
+	UpdateStrategy types.String              `tfsdk:"update_strategy"`
+	Label          types.String              `tfsdk:"label"`
+	FirewallID     types.Int64               `tfsdk:"firewall_id"`
+	IsolationIPv4  types.Bool                `tfsdk:"isolation_public_ipv4"`
+	IsolationIPv6  types.Bool                `tfsdk:"isolation_public_ipv6"`
+	Networking     []NodePoolNetworkingModel `tfsdk:"networking"`
 }
 
 type NodePoolNetworkingModel struct {
